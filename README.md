@@ -1,2 +1,149 @@
 # TraineeForm
 Trainee Management Form
+# html code
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form with bootstrap</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid text-dark py-3">
+        <header class="text-center">
+            <div > 
+                <h1 class="display-7">Trainee Registration Form</h1>
+                <p>Please fill all the details correctly</p>
+                <hr>
+            </div>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <h3>Trainee basic details</h3>
+              <hr>
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter your first name">
+                <label for="middleName">Middle Name</label>
+                <input type="text" class="form-control" id="middleName" placeholder="Enter your middle name">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+              </div>
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="other" value="other">
+                  <label class="form-check-label" for="other">Other</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="college">College Name</label>
+                <input type="text" class="form-control" id="college" placeholder="Enter your college name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea class="form-control" id="address" rows="3" placeholder="Enter your address"></textarea>
+              </div>
+              <div>
+                <p>Start And End date of training</p>
+                <div class="form-group">
+                  <label for="startDate">Start Date</label>
+                  <input type="date" id="startDate" placeholder="Select start date">
+                </div>
+                <div class="form-group">
+                  <label for="endDate">End Date</label>
+                  <input type="date" id="endDate" placeholder="Select end date">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="project">Select the topic of Project:</label>
+                <select class="form-control" id="project">
+                  <option value="">Select a project</option>
+                  <option value="Web development">Web Development</option>
+                  <option value="Android development">Android development</option>
+                  <option value="App Development">App Development</option>
+                </select>
+              </div>
+              <h3>Address Details</h3>
+              <hr>
+              <div class="form-group">
+                <label for="street">Street</label>
+                <input type="text" class="form-control" id="street" placeholder="Enter street">
+              </div>
+              <div class="form-group">
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="Enter city">
+              </div>
+              <div class="form-group">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="Enter state">
+              </div>
+              <div class="form-group">
+                <label for="zipcode">Zip Code</label>
+                <input type="text" class="form-control" id="zipcode" placeholder="Enter zip code">
+              </div>
+              <h3>College Details</h3>
+              <hr>
+              <div class="form-group">
+                <label for="collegeName">College Name</label>
+                <input type="text" class="form-control" id="collegeName" placeholder="Enter college name">
+              </div>
+              <div class="form-group">
+                <label for="collegeLocation">Location</label>
+                <input type="text" class="form-control" id="collegeLocation" placeholder="Enter college location">
+              </div>
+              <div class="form-group">
+                <label for="collegeCourse">Course</label>
+                <select class="form-control" id="collegeCourse">
+                  <option value="">Select a course</option>
+                  <option value="computerScience">Computer Science</option>
+                  <option value="InformationTechnology">Information Technology</option>
+                  <option value="Mechanical">Mechanical</option>
+                </select>
+              </div>
+              <h3>Training center Details</h3>
+              <hr>
+              <div class="form-group">
+                <label for="centerName">Training Center Name</label>
+                <input type="text" class="form-control" id="centerName" placeholder="Enter training center name">
+              </div>
+              <div class="form-group">
+                <label for="centerLocation">Location</label>
+                <input type="text" class="form-control" id="centerLocation" placeholder="Enter training center location">
+              </div>
+              <div class="form-group">
+                <label for="centerCourses">Courses Offered</label>
+                <textarea class="form-control" id="centerCourses" rows="3" placeholder="Enter courses offered"></textarea>
+              </div>
+              <div class="center-button">
+                <button type="submit" class="btn custom-button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+        <!-- Add more form fields if needed -->
+  <!-- Your form code will go here -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
